@@ -16,3 +16,19 @@ inputting a word to the model, it will generate a whole script of a specified le
 All of the code is written in python and the pytorch library is used to implement the recurrent neural
 network.
 
+## Architecture of the Model and Hyperparameters
+
+The network is a recurrent neural network consisting of two hidden layers with LSTM cells, an embedding
+layer at the beginning and a fully connected layer at the end. The optimizer for the backpropagation
+process is an Adam optimizer. 
+
+Here are the chosen hyperparameters:
+
+* Sequence Length: 10
+* Batch Size: 128
+* Embedding Dimension: 400
+* Dimension of hidden States: 256
+* Epochs: 15
+* Learning Rate: 0.001
+
+
